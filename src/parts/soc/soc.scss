@@ -1,0 +1,38 @@
+.soc {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+}
+.soc__share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // font-size: 13px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0em;
+    color: $color-beta;
+    margin: .5rem;
+    &::before {
+        content: url("../../img/share.svg");
+        margin-right: 7px;
+        transform: translateY(2px);
+    }
+}
+.soc__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.soc__link {
+
+
+}
+.soc__link:not(:last-child) {
+    // margin-right: 15px; 
+}
+.soc-img {
+     
+}
