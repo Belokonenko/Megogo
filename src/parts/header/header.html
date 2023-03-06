@@ -1,15 +1,7 @@
 <header class="header">
     <div class="header__container container">
-        <a
-            class="header__link-wrap-logo"
-            href="#"
-            class="
-                d-flex
-                align-items-center
-                mb-2 mb-lg-0
-                text-white text-decoration-none
-            "
-        >
+        
+        <a class="header__link-wrap-logo" href="#" class="">
             <img
                 class="header__img-log"
                 src="../../img/logo-header.png"
@@ -18,27 +10,22 @@
             />
         </a>
 
-        <ul
-            class="header__nav-list"
-            class="
-                nav
-                col-12 col-lg-auto
-                me-lg-auto
-                mb-2
-                justify-content-center
-                mb-md-0
-            "
-        >
-            <li><a href="#" class="nav-link px-2 text-secondary">HOME</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">STUDIOS</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">CATEGORIES</a></li>
-            <li>
-                <a href="#" class="nav-link px-2 text-white"
-                    >PARTNERS
-                    <img src="./img/arr_patern.svg" alt="" />
-                </a>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
             </li>
-            <li><a href="#" class="nav-link px-2 text-white">CONTACT US</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" class="">STUDIOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" class="">CATEGORIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" class="">PARTNERS </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" class="">CONTACT US</a>
+            </li>
         </ul>
 
         <form class="header__form-serch" role="search">
@@ -47,12 +34,14 @@
                 type="search"
                 placeholder="Search..."
                 aria-label="Search"
+                hidden
             />
             <button class="header__btn-serch">
                 <img src="./img/search.svg" alt="" srcset="" />
             </button>
-            @@include('../soc/soc.html')
         </form>
-
+        
+        @@include('../soc/soc.html')
+    
     </div>
 </header>

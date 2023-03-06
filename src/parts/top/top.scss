@@ -14,20 +14,17 @@
 .top__text {
     font-weight: 400;
     line-height: 1;
-    letter-spacing: 0em;
-    margin: 10px 25px 10px 0;
+    margin: .5rem 1rem;
     text-align: center;
 }
 .top__btn {
     padding: 4px 50px;
     background-color: $color-light;
-    margin: 10px 25px ;
+    margin: .5rem;
 
     font-size: 14px;
     font-weight: 700;
     line-height: 1;
-    letter-spacing: 0em;
-
     color: $color-dark;
     border-radius: 100px;
     &:hover {
