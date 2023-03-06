@@ -1,0 +1,37 @@
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-beta;
+    min-height: 45px;
+}
+.top__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top__text {
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0em;
+    margin: 10px 25px 10px 0;
+    text-align: center;
+}
+.top__btn {
+    padding: 4px 50px;
+    background-color: $color-light;
+    margin: 10px 25px ;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+
+    color: $color-dark;
+    border-radius: 100px;
+    &:hover {
+    }
+    &:active {
+    }
+}
