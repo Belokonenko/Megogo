@@ -1,6 +1,7 @@
 .soc {
     display: grid;
-    row-gap: 6px;
+    max-width: 180px;
+    row-gap: 10px;
 }
 .soc__share {
     display: flex;
@@ -8,7 +9,7 @@
     align-items: center;
     align-self: end;
     color: $color-beta;
-    
+
     font-size: 13px;
     font-weight: 600;
     line-height: 1;
@@ -24,15 +25,38 @@
     align-self: start;
     margin: 0;
     padding: 0;
-
 }
 .soc__link {
-
-
 }
 .soc__link:not(:last-child) {
-    // margin-right: 15px; 
 }
 .soc-img {
-     
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1250px) {
+    .soc {
+        margin: 2rem auto;
+        grid-column: 1/-1;
+        row-gap: 1rem;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .soc-img {
+        width: 50px;
+    }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
 }

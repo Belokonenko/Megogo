@@ -1,6 +1,6 @@
 'use strict';
-// import burger from "../parts/burger/burger.js";
+import baner from "../parts/baner/baner.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    // burger();
+    baner();
 })
