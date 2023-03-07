@@ -1,0 +1,76 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 413px;
+    width: 294px;
+    background-color: $color-dark;
+}
+.card__img {
+    width: 100%;
+}
+.card__resolution {
+    position: absolute;
+    left: 9px;
+    top: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 22px;
+    width: 63px;
+
+    border-radius: 2px;
+    border: none;
+    outline: none;
+
+    background-color: $color-beta;
+    color: $color-dark;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    text-align: center;
+    & p {
+        margin: 0;
+        padding: 0;
+    }
+}
+.card__rating {
+    position: absolute;
+    right: 9px;
+    top: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 63px;
+    height: 22px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 2px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: $color-light;
+
+    & p {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-top: 2px;
+        margin-left: 8px;
+
+    }
+
+    &::before {
+        content: url(../../img/rating.svg);
+    }
+}
