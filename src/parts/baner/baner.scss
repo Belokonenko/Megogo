@@ -77,16 +77,19 @@
 
 // dots
 .dots {
-    
     position: absolute;
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
-    height: 15px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    height: 15px;
+    padding: 1rem;
     // background-color: red;
+    cursor: pointer;
 }
 .dot {
     height: 10px;

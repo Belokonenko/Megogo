@@ -33,7 +33,6 @@ export default function baner() {
     });
 
     //-- dots --
-
     const dots = document.querySelector(".dots");
 
     for (let index = 0; index < numItems; index++) {
@@ -68,9 +67,6 @@ export default function baner() {
 
     //-- /dots --
 
-    //=== dragendrop ===
-
-    //=== //dragendrop ===
 
     function setParam() {
         widthVewPort = viewport.getBoundingClientRect().width;
