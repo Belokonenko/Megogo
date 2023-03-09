@@ -4,7 +4,6 @@ export default function rec() {
     const line = document.querySelector(".line");
     const vew = document.querySelector(".vew");
 
-    let positionMarker = 0;
 
     //-- create cards
     for (let index = 0; index < 20; index++) {
@@ -13,7 +12,7 @@ export default function rec() {
 
     const cardds = document.querySelectorAll(".cardd");
     const numCardds = cardds.length;
-
+     
     //-- set size vewport
     const slide = document.querySelector(".cardd");
     let widthSlide = slide.getBoundingClientRect().width;
@@ -23,9 +22,9 @@ export default function rec() {
     const next = document.querySelector(".next");
     const prev = document.querySelector(".prev");
     const maxPositionMark = numCardds - numVewSlides;
+    let positionMarker = 0;
 
     next.addEventListener("click", () => {
-
         if (positionMarker == maxPositionMark) {
             positionMarker = 0;
         } else {
@@ -50,6 +49,10 @@ export default function rec() {
         }
         muveLine(positionMarker);
     });
+    
+    //set position line
+    muveLine(Math.round(maxPositionMark / 2));
+
 
     //-- functions --
 
