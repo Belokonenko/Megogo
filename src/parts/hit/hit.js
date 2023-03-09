@@ -33,6 +33,7 @@ export default function hit() {
     
     setHitParam();
 
+
     // -- data --
 
     // --tmp data for test add card in slide line
@@ -122,6 +123,7 @@ export default function hit() {
         `;
             line.append(hitCard);
         });
+    setHitParam();
     }
 
     // function getAmountElements() {
@@ -141,8 +143,6 @@ export default function hit() {
         hitAmountItems = hitSliderItems.length;
 
         let arrItems = Array.from(hitSliderItems);
-
-
 
         arrItems.forEach((item) => {
             item.style.width = `${hitWidthVewPort / hitAmoutItemVeu}px`;
