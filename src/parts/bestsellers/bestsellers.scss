@@ -1,0 +1,24 @@
+.bestsellers {
+    min-height: 670px;
+    background-color: #111111;
+    padding: 72px 0 0 0;
+}
+.bestsellers__title {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    
+    color: $color-beta;
+}
+.bestsellers__subtitle {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    color: $color-light;
+}

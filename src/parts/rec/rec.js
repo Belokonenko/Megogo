@@ -10,11 +10,11 @@ export default function rec() {
         creatSlide();
     }
 
-    const cardds = document.querySelectorAll(".cardd");
+    const cardds = document.querySelectorAll(".card-wrap");
     const numCardds = cardds.length;
      
     //-- set size vewport
-    const slide = document.querySelector(".cardd");
+    const slide = document.querySelector(".card-wrap");
     let widthSlide = slide.getBoundingClientRect().width;
     vew.style.width = `${widthSlide * numVewSlides}px`;
 
@@ -58,7 +58,19 @@ export default function rec() {
 
     function creatSlide() {
         const div = document.createElement("div");
-        div.classList.add("cardd");
+        div.classList.add("card-wrap");
+        div.innerHTML = `
+            <div class="card">
+                <img class="card__img" src="../../img/img-cat.jpg" alt="movie card" />
+                <div class="card__resolution">
+                    <p class="card__resolution-num">1080</p>
+                    <p class="card__resolution-pix">p</p>
+                </div>
+                <div class="card__rating">
+                    <p class="card__rating-num">5.5</p> 
+                </div>
+            </div>
+        `
         line.append(div);
     }
 
