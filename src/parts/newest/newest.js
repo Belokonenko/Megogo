@@ -3,7 +3,7 @@ export default function newest() {
     const newestContent = document.querySelector(".newest__content");
     
 
-    // setContent(dataContent)
+    setContent(dataContent)
 
 
     function setContent(arr) {
@@ -11,20 +11,28 @@ export default function newest() {
 
         arr.forEach((element) => {
             newestContent.innerHTML += `
-                <div class="card">
-                    <img
-                        class="card__img"
-                        src="../../img/img-cat.jpg"
-                        alt="movie card"
-                    />
-                    <div class="card__resolution">
-                        <p class="card__resolution-num">1080</p>
-                        <p class="card__resolution-pix">p</p>
+                <a class="card-b" href="#">
+                    <div class="card-b__wrap-img">
+                        <img
+                            class="card-b__img"
+                            src="../../img/img-cat.jpg"
+                            alt="movie card-b"
+                        />
+                        <div class="card-b__resolution">
+                            <p class="card-b__resolution-num">1080</p>
+                            <p class="card-b__resolution-pix">p</p>
+                        </div>
+                        <div class="card-b__rating">
+                            <p class="card-b__rating-num">5.5</p>
+                        </div>
                     </div>
-                    <div class="card__rating">
-                        <p class="card__rating-num">5.5</p>
+                    <div class="card-b__wrap-time">
+                        <span class="card-b__year">2023</span>
+                        <span class="card-b__time">110m</span>
                     </div>
-                </div>
+                        <span class="card-b__desc">Crossword Mysteries: 2-Movie Collection</span>
+
+                </a>
 
             `;
         });

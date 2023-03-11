@@ -1,4 +1,6 @@
 .newest {
+    display: flex;
+    flex-direction: column;
     max-width: 1756px;
     width: 100%;
     min-height: 2500px;
@@ -12,7 +14,7 @@
 .newest__top {
     display: grid;
     grid-template-columns: max-content max-content 1fr;
-    margin: 0 58px;
+    margin: 0 58px 45px 58px;
 }
 .newest__title {
     align-self: center;
@@ -69,8 +71,46 @@
 
 .newest__content {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 1640px;
+    grid-template-columns: repeat(5, max-content);
     margin: 0 auto;
     padding: 0;
 }
+// --  pagination block
+.newest__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 195px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: $color-light;
+}
+.newest__pag-btn {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+}
+.newest__arr-pag-left {
+    transform: rotate(180deg);
+}
+.newest__pag-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em 0.5em 0.1em 0.5em;
+     &--active {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 21px;
+        font-weight: 700;
+        color: $color-beta;
+    }
+}
+// --  /pagination block
