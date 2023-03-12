@@ -129,7 +129,7 @@ export default function rec() {
             rating: 4.5,
             year: 2020,
             time: 147,
-            desc: "Scream 4: 4-Movie ",
+            desc: "Scream 3: 3-Movie ",
         },
         {
             href: "#",
