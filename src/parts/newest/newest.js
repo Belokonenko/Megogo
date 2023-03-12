@@ -55,6 +55,177 @@ export default function newest() {
             time: 122,
             desc:'Mad Max: Fury Road' 
         },
+        {
+            href: '#',
+            img: "../../img/img-film-0.jpg",
+            resolution: 1080,
+            rating: 5.0,
+            year: 2022,
+            time: 111,
+            desc:'Crossword Mysteries: 2-Movie Collection' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-1.jpg",
+            resolution: 1080,
+            rating: 4.5,
+            year: 2020,
+            time: 147,
+            desc:'Scream 4: 4-Movie ' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-2.jpg",
+            resolution: 1080,
+            rating: 3.5,
+            year: 2021,
+            time: 100,
+            desc:'Django Unchained: 1-Movie ' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-3.jpg",
+            resolution: 1080,
+            rating: 4.0,
+            year: 2019,
+            time: 190,
+            desc:'The Avengers: 1-Movie' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-4.jpg",
+            resolution: 1080,
+            rating: 3.3,
+            year: 2020,
+            time: 120,
+            desc:'Warrior: 2-Movie Collection' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-5.jpg",
+            resolution: 1080,
+            rating: 5.3,
+            year: 2020,
+            time: 122,
+            desc:'Mad Max: Fury Road' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-0.jpg",
+            resolution: 1080,
+            rating: 5.0,
+            year: 2022,
+            time: 111,
+            desc:'Crossword Mysteries: 2-Movie Collection' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-1.jpg",
+            resolution: 1080,
+            rating: 4.5,
+            year: 2020,
+            time: 147,
+            desc:'Scream 4: 4-Movie ' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-2.jpg",
+            resolution: 1080,
+            rating: 3.5,
+            year: 2021,
+            time: 100,
+            desc:'Django Unchained: 1-Movie ' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-3.jpg",
+            resolution: 1080,
+            rating: 4.0,
+            year: 2019,
+            time: 190,
+            desc:'The Avengers: 1-Movie' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-4.jpg",
+            resolution: 1080,
+            rating: 3.3,
+            year: 2020,
+            time: 120,
+            desc:'Warrior: 2-Movie Collection' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-5.jpg",
+            resolution: 1080,
+            rating: 5.3,
+            year: 2020,
+            time: 122,
+            desc:'Mad Max: Fury Road' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-0.jpg",
+            resolution: 1080,
+            rating: 5.0,
+            year: 2022,
+            time: 111,
+            desc:'Crossword Mysteries: 2-Movie Collection' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-1.jpg",
+            resolution: 1080,
+            rating: 4.5,
+            year: 2020,
+            time: 147,
+            desc:'Scream 4: 4-Movie ' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-2.jpg",
+            resolution: 1080,
+            rating: 3.5,
+            year: 2021,
+            time: 100,
+            desc:'Django Unchained: 1-Movie ' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-3.jpg",
+            resolution: 1080,
+            rating: 4.0,
+            year: 2019,
+            time: 190,
+            desc:'The Avengers: 1-Movie' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-4.jpg",
+            resolution: 1080,
+            rating: 3.3,
+            year: 2020,
+            time: 120,
+            desc:'Warrior: 2-Movie Collection' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-5.jpg",
+            resolution: 1080,
+            rating: 5.3,
+            year: 2020,
+            time: 122,
+            desc:'Mad Max: Fury Road' 
+        },
+        {
+            href: '#',
+            img: "../../img/img-film-5.jpg",
+            resolution: 1080,
+            rating: 5.3,
+            year: 2020,
+            time: 122,
+            desc:'Mad Max: Fury Road' 
+        },
     ];
     const newestContent = document.querySelector(".newest__content");
     
