@@ -2,7 +2,7 @@ export default function newest() {
     const dataContent = [
         {
             href: "#",
-            img: "../../img/img-film-0.jpg",
+            img: "./img/img-film-0.jpg",
             resolution: 1080,
             rating: 5.0,
             year: 2022,
@@ -11,7 +11,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-1.jpg",
+            img: "./img/img-film-1.jpg",
             resolution: 1080,
             rating: 4.5,
             year: 2020,
@@ -20,7 +20,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-2.jpg",
+            img: "./img/img-film-2.jpg",
             resolution: 1080,
             rating: 3.5,
             year: 2021,
@@ -29,7 +29,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-3.jpg",
+            img: "./img/img-film-3.jpg",
             resolution: 1080,
             rating: 4.0,
             year: 2019,
@@ -38,7 +38,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-4.jpg",
+            img: "./img/img-film-4.jpg",
             resolution: 1080,
             rating: 3.3,
             year: 2020,
@@ -47,7 +47,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-5.jpg",
+            img: "./img/img-film-5.jpg",
             resolution: 1080,
             rating: 5.3,
             year: 2020,
@@ -56,7 +56,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-0.jpg",
+            img: "./img/img-film-0.jpg",
             resolution: 1080,
             rating: 5.0,
             year: 2022,
@@ -65,7 +65,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-1.jpg",
+            img: "./img/img-film-1.jpg",
             resolution: 1080,
             rating: 4.5,
             year: 2020,
@@ -74,7 +74,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-2.jpg",
+            img: "./img/img-film-2.jpg",
             resolution: 1080,
             rating: 3.5,
             year: 2021,
@@ -83,7 +83,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-3.jpg",
+            img: "./img/img-film-3.jpg",
             resolution: 1080,
             rating: 4.0,
             year: 2019,
@@ -92,7 +92,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-4.jpg",
+            img: "./img/img-film-4.jpg",
             resolution: 1080,
             rating: 3.3,
             year: 2020,
@@ -101,7 +101,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-5.jpg",
+            img: "./img/img-film-5.jpg",
             resolution: 1080,
             rating: 5.3,
             year: 2020,
@@ -110,7 +110,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-0.jpg",
+            img: "./img/img-film-0.jpg",
             resolution: 1080,
             rating: 5.0,
             year: 2022,
@@ -119,7 +119,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-1.jpg",
+            img: "./img/img-film-1.jpg",
             resolution: 1080,
             rating: 4.5,
             year: 2020,
@@ -128,7 +128,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-2.jpg",
+            img: "./img/img-film-2.jpg",
             resolution: 1080,
             rating: 3.5,
             year: 2021,
@@ -137,7 +137,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-3.jpg",
+            img: "./img/img-film-3.jpg",
             resolution: 1080,
             rating: 4.0,
             year: 2019,
@@ -146,7 +146,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-4.jpg",
+            img: "./img/img-film-4.jpg",
             resolution: 1080,
             rating: 3.3,
             year: 2020,
@@ -155,7 +155,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-5.jpg",
+            img: "./img/img-film-5.jpg",
             resolution: 1080,
             rating: 5.3,
             year: 2020,
@@ -164,7 +164,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-0.jpg",
+            img: "./img/img-film-0.jpg",
             resolution: 1080,
             rating: 5.0,
             year: 2022,
@@ -173,7 +173,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-1.jpg",
+            img: "./img/img-film-1.jpg",
             resolution: 1080,
             rating: 4.5,
             year: 2020,
@@ -182,7 +182,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-2.jpg",
+            img: "./img/img-film-2.jpg",
             resolution: 1080,
             rating: 3.5,
             year: 2021,
@@ -191,7 +191,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-3.jpg",
+            img: "./img/img-film-3.jpg",
             resolution: 1080,
             rating: 4.0,
             year: 2019,
@@ -200,7 +200,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-4.jpg",
+            img: "./img/img-film-4.jpg",
             resolution: 1080,
             rating: 3.3,
             year: 2020,
@@ -209,7 +209,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-5.jpg",
+            img: "./img/img-film-5.jpg",
             resolution: 1080,
             rating: 5.3,
             year: 2020,
@@ -218,7 +218,7 @@ export default function newest() {
         },
         {
             href: "#",
-            img: "../../img/img-film-5.jpg",
+            img: "./img/img-film-5.jpg",
             resolution: 1080,
             rating: 5.3,
             year: 2020,
@@ -230,11 +230,6 @@ export default function newest() {
     const newestContent = document.querySelector(".newest__content");
 
     setContent(dataContent);
-
-    // setContent(sortRating(dataContent));
-
-    // setContent(sortDate(dataContent));
-
     
     // -- sort
     
@@ -246,6 +241,7 @@ export default function newest() {
     
     btn.addEventListener("click", () => {
         arr.style.transform = "rotate(180deg)";
+
     });
 
     nameBtn.addEventListener('click', () => {
