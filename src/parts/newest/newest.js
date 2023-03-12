@@ -230,38 +230,45 @@ export default function newest() {
     const newestContent = document.querySelector(".newest__content");
 
     setContent(dataContent);
-    
+
     // -- sort
-    
+
     const btn = document.querySelector(".newest__btn");
     const arr = document.querySelector(".newest__btn-arr");
-    const nameBtn = document.querySelector(".sort-name")
-    const dateBtn = document.querySelector(".sort-date")
-    const ratingBtn = document.querySelector(".sort-rating")
-    
-    btn.addEventListener("click", () => {
-        arr.style.transform = "rotate(180deg)";
+    const nameBtn = document.querySelector(".sort-name");
+    const dateBtn = document.querySelector(".sort-date");
+    const ratingBtn = document.querySelector(".sort-rating");
+    const dropList = document.querySelector(".newest__drop-list");
+    const wrapBtn = document.querySelector('.newest__wrap-btn')
 
+    btn.addEventListener("click", () => {
+        dropList.classList.toggle('newest__drop-list--active');
+        arr.classList.toggle('newest__btn-arr--active')
+    });
+    wrapBtn.addEventListener('mouseleave', () => {
+        dropList.classList.remove('newest__drop-list--active');
+        arr.classList.remove('newest__btn-arr--active')
+    })
+
+    nameBtn.addEventListener("click", () => {
+        setContent(sortDesc(dataContent));
     });
 
-    nameBtn.addEventListener('click', () => {
-        setContent(sortDesc(dataContent));
-    })
-    
-    dateBtn.addEventListener('click', () => {
+    dateBtn.addEventListener("click", () => {
         setContent(sortDate(dataContent));
-    })
-    
-    ratingBtn.addEventListener('click', () => {
+    });
+
+    ratingBtn.addEventListener("click", () => {
         setContent(sortRating(dataContent));
-    })
+    });
 
     // -- /sort
+
     // -- functions
-    
+
     function sortDesc(arr) {
         const temp = JSON.parse(JSON.stringify(arr));
-        
+
         // sort by name
         temp.sort((a, b) => {
             const nameA = a.desc.toUpperCase(); // ignore upper and lowercase
