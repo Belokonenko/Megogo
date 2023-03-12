@@ -27,6 +27,8 @@
 .card-b__wrap-img {
     transition: all 0.3s;
     position: relative;
+    width: 294px;
+    height: 413px;
     &::after {
         position: absolute;
         content: "";
@@ -55,6 +57,7 @@
 }
 .card-b__img {
     width: 100%;
+    height: 100%;
 }
 .card-b__resolution {
     position: absolute;
