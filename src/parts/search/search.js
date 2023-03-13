@@ -1,5 +1,5 @@
 export default function search() {
-    // test
+    
     const dataContent = [
         {
             href: "#",
@@ -81,7 +81,6 @@ export default function search() {
     const input = document.querySelector(".search__input");
 
     items.forEach(item => {
-        item.addEventListener('click', )
     })
 
     input.addEventListener("input", () => {

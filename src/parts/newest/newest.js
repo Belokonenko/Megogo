@@ -66,7 +66,6 @@ export default function newest() {
 
     setContent(dataContent);
     
-    setSearchList(dataContent);
 
     // -- sort
 
