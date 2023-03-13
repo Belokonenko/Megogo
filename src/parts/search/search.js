@@ -1,11 +1,4 @@
 export default function search() {
-    // const clearInput = () => {
-    //     const input = document.getElementsByTagName("input")[0];
-    //     input.value = "";
-    // };
-
-    // const clearBtn = document.getElementById("clear-btn");
-    // clearBtn.addEventListener("click", clearInput);
 
     const dataContent = [
         {
@@ -86,6 +79,10 @@ export default function search() {
 
     const items = document.querySelectorAll(".search__item");
     const input = document.querySelector(".search__input");
+
+    items.forEach(item => {
+        item.addEventListener('click', )
+    })
 
     input.addEventListener("input", () => {
         const value = input.value.trim();

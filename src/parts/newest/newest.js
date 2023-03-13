@@ -65,6 +65,8 @@ export default function newest() {
     const newestContent = document.querySelector(".newest__content");
 
     setContent(dataContent);
+    
+    setSearchList(dataContent);
 
     // -- sort
 
