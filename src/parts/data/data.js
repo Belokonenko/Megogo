@@ -1,12 +1,4 @@
-export default function search() {
-    // const clearInput = () => {
-    //     const input = document.getElementsByTagName("input")[0];
-    //     input.value = "";
-    // };
-
-    // const clearBtn = document.getElementById("clear-btn");
-    // clearBtn.addEventListener("click", clearInput);
-
+export default function data(){
     const dataContent = [
         {
             href: "#",
@@ -69,35 +61,5 @@ export default function search() {
             desc: "Fury Road",
         },
     ];
-    const listSearch = document.querySelector(".search__list");
 
-    setSearchList(dataContent);
-
-    function setSearchList(arr) {
-        listSearch.innerHTML = "";
-        
-        arr.forEach((item) => {
-            listSearch.innerHTML += `
-                <li class="search__item hidden"><a href=${item.href}>${item.name}</a></li>
-            `;
-        });
-    }
-
-
-    const items = document.querySelectorAll(".search__item");
-    const input = document.querySelector(".search__input");
-
-    input.addEventListener("input", () => {
-        const value = input.value.trim();
-        
-        if (value) {
-            items.forEach((item) => {
-                if (item.textContent.toLowerCase().search(value.toLowerCase())) {
-                    item.classList.remove("visual");
-                } else {
-                    item.classList.add("visual");
-                }
-            });
-        }
-    });
 }

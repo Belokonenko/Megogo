@@ -36,8 +36,6 @@ export default function baner() {
     const dots = document.querySelector(".dots");
 
     for (let index = 0; index < numItems; index++) {
-        console.log('dot');
-        console.log(numItems);
         
         const dot = document.createElement('div');
         
@@ -56,11 +54,9 @@ export default function baner() {
     
     function activeDot(num = 0) {
         const ds = document.querySelectorAll('.dot');
-        console.log(ds);  
         ds.forEach((item) => {
             item.classList.remove('dot--active');
         })
-        console.log(ds[num]); 
         ds[num].classList.add('dot--active');
 
     }

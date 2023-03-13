@@ -76,8 +76,19 @@
 }
 .search__list {
     position: absolute;
-    color: red;
+    background-color: $color-dark;
     z-index: 10;
+    padding: 0;
 }
 
+.search__item {
+    padding:  .5em 1em;
+}
 
+.hidden {
+    display: none;
+}
+
+.visual {
+    display: block;
+}

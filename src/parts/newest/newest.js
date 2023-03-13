@@ -7,7 +7,8 @@ export default function newest() {
             rating: 5.0,
             year: 2022,
             time: 111,
-            desc: "Crossword Mysteries: 2-Movie Collection",
+            name: "Crossword Mysteries",
+            desc: "2-Movie Collection",
         },
         {
             href: "#",
@@ -16,7 +17,8 @@ export default function newest() {
             rating: 4.5,
             year: 2020,
             time: 147,
-            desc: "Scream 3: 3-Movie ",
+            name: "Scream 3",
+            desc: "3-Movie",
         },
         {
             href: "#",
@@ -25,7 +27,8 @@ export default function newest() {
             rating: 3.5,
             year: 2021,
             time: 100,
-            desc: "Django Unchained: 1-Movie ",
+            name: "Django Unchained",
+            desc: "1-Movie",
         },
         {
             href: "#",
@@ -34,7 +37,8 @@ export default function newest() {
             rating: 4.0,
             year: 2019,
             time: 190,
-            desc: "The Avengers: 1-Movie",
+            name: "The Avengers",
+            desc: "1-Movie",
         },
         {
             href: "#",
@@ -43,7 +47,8 @@ export default function newest() {
             rating: 3.3,
             year: 2020,
             time: 120,
-            desc: "Warrior: 2-Movie Collection",
+            name: "Warrior",
+            desc: "1-Movie Collection ",
         },
         {
             href: "#",
@@ -52,178 +57,8 @@ export default function newest() {
             rating: 5.3,
             year: 2020,
             time: 122,
-            desc: "Mad Max: Fury Road",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-0.jpg",
-            resolution: 1080,
-            rating: 5.0,
-            year: 2022,
-            time: 111,
-            desc: "Crossword Mysteries: 2-Movie Collection",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-1.jpg",
-            resolution: 1080,
-            rating: 4.5,
-            year: 2020,
-            time: 147,
-            desc: "Scream 4: 4-Movie ",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-2.jpg",
-            resolution: 1080,
-            rating: 3.5,
-            year: 2021,
-            time: 100,
-            desc: "Django Unchained: 1-Movie ",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-3.jpg",
-            resolution: 1080,
-            rating: 4.0,
-            year: 2019,
-            time: 190,
-            desc: "The Avengers: 1-Movie",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-4.jpg",
-            resolution: 1080,
-            rating: 3.3,
-            year: 2020,
-            time: 120,
-            desc: "Warrior: 2-Movie Collection",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-5.jpg",
-            resolution: 1080,
-            rating: 5.3,
-            year: 2020,
-            time: 122,
-            desc: "Mad Max: Fury Road",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-0.jpg",
-            resolution: 1080,
-            rating: 5.0,
-            year: 2022,
-            time: 111,
-            desc: "Crossword Mysteries: 2-Movie Collection",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-1.jpg",
-            resolution: 1080,
-            rating: 4.5,
-            year: 2020,
-            time: 147,
-            desc: "Scream 3: 3-Movie ",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-2.jpg",
-            resolution: 1080,
-            rating: 3.5,
-            year: 2021,
-            time: 100,
-            desc: "Django Unchained: 1-Movie ",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-3.jpg",
-            resolution: 1080,
-            rating: 4.0,
-            year: 2019,
-            time: 190,
-            desc: "The Avengers: 1-Movie",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-4.jpg",
-            resolution: 1080,
-            rating: 3.3,
-            year: 2020,
-            time: 120,
-            desc: "Warrior: 2-Movie Collection",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-5.jpg",
-            resolution: 1080,
-            rating: 5.3,
-            year: 2020,
-            time: 122,
-            desc: "Mad Max: Fury Road",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-0.jpg",
-            resolution: 1080,
-            rating: 5.0,
-            year: 2022,
-            time: 111,
-            desc: "Crossword Mysteries: 2-Movie Collection",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-1.jpg",
-            resolution: 1080,
-            rating: 4.5,
-            year: 2020,
-            time: 147,
-            desc: "Scream 3: 3-Movie ",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-2.jpg",
-            resolution: 1080,
-            rating: 3.5,
-            year: 2021,
-            time: 100,
-            desc: "Django Unchained: 1-Movie ",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-3.jpg",
-            resolution: 1080,
-            rating: 4.0,
-            year: 2019,
-            time: 190,
-            desc: "The Avengers: 1-Movie",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-4.jpg",
-            resolution: 1080,
-            rating: 3.3,
-            year: 2020,
-            time: 120,
-            desc: "Warrior: 2-Movie Collection",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-5.jpg",
-            resolution: 1080,
-            rating: 5.3,
-            year: 2020,
-            time: 122,
-            desc: "Mad Max: Fury Road",
-        },
-        {
-            href: "#",
-            img: "./img/img-film-5.jpg",
-            resolution: 1080,
-            rating: 5.3,
-            year: 2020,
-            time: 122,
-            desc: "Mad Max: Fury Road",
+            name: "Mad Max",
+            desc: "Fury Road",
         },
     ];
 
@@ -239,16 +74,16 @@ export default function newest() {
     const dateBtn = document.querySelector(".sort-date");
     const ratingBtn = document.querySelector(".sort-rating");
     const dropList = document.querySelector(".newest__drop-list");
-    const wrapBtn = document.querySelector('.newest__wrap-btn')
+    const wrapBtn = document.querySelector(".newest__wrap-btn");
 
     btn.addEventListener("click", () => {
-        dropList.classList.toggle('newest__drop-list--active');
-        arr.classList.toggle('newest__btn-arr--active')
+        dropList.classList.toggle("newest__drop-list--active");
+        arr.classList.toggle("newest__btn-arr--active");
     });
-    wrapBtn.addEventListener('mouseleave', () => {
-        dropList.classList.remove('newest__drop-list--active');
-        arr.classList.remove('newest__btn-arr--active')
-    })
+    wrapBtn.addEventListener("mouseleave", () => {
+        dropList.classList.remove("newest__drop-list--active");
+        arr.classList.remove("newest__btn-arr--active");
+    });
 
     nameBtn.addEventListener("click", () => {
         setContent(sortDesc(dataContent));
@@ -335,8 +170,11 @@ export default function newest() {
                         <span class="card-b__year">${item.year}</span>
                         <span class="card-b__time">${item.time}p</span>
                     </div>
+                    <div >
+                        <span class="card-b__name">${item.name}</span>
+                        <span>${' : '}</span>
                         <span class="card-b__desc">${item.desc}</span>
-
+                    </div>
                 </a>
 
             `;
