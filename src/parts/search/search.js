@@ -80,8 +80,6 @@ export default function search() {
     const items = document.querySelectorAll(".search__item");
     const input = document.querySelector(".search__input");
 
-    items.forEach(item => {
-    })
 
     input.addEventListener("input", () => {
         const value = input.value.trim();
@@ -92,6 +90,11 @@ export default function search() {
                     item.classList.remove("visual");
                 } else {
                     item.classList.add("visual");
+                    item.addEventListener('click', () => {
+                        console.log('click');
+                        item.classList.remove("visual");
+                        input.value = '';
+                    })
                 }
             });
         }

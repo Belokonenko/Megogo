@@ -1,7 +1,7 @@
 export default function newest() {
     const dataContent = [
         {
-            href: "#",
+            href: "../patern.html",
             img: "./img/img-film-0.jpg",
             resolution: 1080,
             rating: 5.0,
