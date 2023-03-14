@@ -7,31 +7,26 @@
     transition: all 1s;
     width: 50px;
     height: 50px;
-    background: $color-bg-alpha;
+    background: transparent;
     box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid $color-beta;
-    padding: 5px;
-
+    border-radius: 11px;
+    border: 1px solid transparent;
     &:hover,
     &:valid {
         width: 200px;
         cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.25);
     }
 
-    &:hover input,
+    &:hover .fa,
+    &:valid .fa{
+        display: none;
+    }
+    
+        &:hover input,
     &:valid input {
         display: block;
     }
-
-    // &:hover .fa,
-    // &:valid .fa {
-    //     background: #07051a;
-    //     color: white;
-    // }
-    // &:valid a {
-    //     display: block;
-    // }
 }
 
 .search__input {
@@ -49,6 +44,7 @@
     padding: 0 20px;
     color: $color-light;
     background-color: transparent;
+
 }
 
 .fa {
@@ -64,14 +60,12 @@
     top: 0;
     right: 0;
     border-radius: 50%;
-    color: #07051a;
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
-    background-color: #111111;
     background-image: url(../../img/search.svg);
     background-repeat: no-repeat;
-    background-position: 60% center;
+    background-position: center center;
 
 }
 .search__list {
