@@ -11,7 +11,7 @@ export default function newest() {
             desc: "2-Movie Collection",
         },
         {
-            href: "#",
+            href: "../movie.html",
             img: "./img/img-film-1.jpg",
             resolution: 1080,
             rating: 4.5,
