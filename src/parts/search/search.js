@@ -62,6 +62,7 @@ export default function search() {
             desc: "Fury Road",
         },
     ];
+    
     const listSearch = document.querySelector(".search__list");
 
     setSearchList(dataContent);
