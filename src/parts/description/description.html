@@ -1,52 +1,62 @@
 <div class="container">
     <div class="desc">
-        <div class="desc__slider">
-            <img class="desc__img-big" src="./img/img-film-0.jpg" alt="" />
-            <div class="desc__line">
-                <img class="desc__img-min" src="./img/img-film-0.jpg" alt="" />
-                <img class="desc__img-min" src="./img/img-film-0.jpg" alt="" />
-            </div>
-        </div>
-
-        <div class="desc__info">
-            <div class="desc_wrp-res-rat">
-                <div class="desc__resolution">
-                    <p class="desc__resolution-num">1080</p>
-                    <p class="desc__resolution-pix">p</p>
-                </div>
-
-                <div class="desc__rating">
-                    <p class="desc__rating-num">5.5</p>
+        <div class="desc__wrap">
+            <div class="desc__slider">
+                <img class="desc__img-big" src="./img/img-film-0.jpg" alt="" />
+                <div class="desc__line">
+                    <img
+                        class="desc__img-min"
+                        src="./img/img-film-0.jpg"
+                        alt=""
+                    />
+                    <img
+                        class="desc__img-min"
+                        src="./img/img-film-0.jpg"
+                        alt=""
+                    />
                 </div>
             </div>
 
-            <p class="desc__top-week">The Best Movies Week</p>
-            <p class="desc__name">Кот в Сапогах</p>
-            <div class="desc__wrap-time">
-                <span class="desc__year">2023</span>
-                <span class="desc__time">1h 20m</span>
-            </div>
-            <div class="desc__wrap-studio">
-                <span class="desc__studio">STUDIO:</span>
-                <div class="desc__studio-btn">MGM / UA</div>
-            </div>
+            <div class="desc__info">
+                <div class="desc_wrp-res-rat">
+                    <div class="desc__resolution">
+                        <p class="desc__resolution-num">1080</p>
+                        <p class="desc__resolution-pix">p</p>
+                    </div>
 
-            <span class="desc__cast">CAST:</span>
-            <samp class="desc__cast-text"
-                >Robert De Niro, Stellan Skarsgard, Natascha McElhone, Jean
-                Reno, Jonathan Pryce, Sean Bean
-            </samp>
-            <div class="desc__wrap-dow">
-                <button class="desc__btn-dow">
-                    <span class="desc__btn-txt">Download</span>
-                </button>
-                <button class="desc__how-dow">HOW DOWNLOAD?</button>
-                <button class="desc__dmca">DMCA INFO</button>
+                    <div class="desc__rating">
+                        <p class="desc__rating-num">5.5</p>
+                    </div>
+                </div>
+
+                <p class="desc__top-week">The Best Movies Week</p>
+                <p class="desc__name">Кот в Сапогах</p>
+                <div class="desc__wrap-time">
+                    <span class="desc__year">2023</span>
+                    <span class="desc__time">1h 20m</span>
+                </div>
+                <div class="desc__wrap-studio">
+                    <span class="desc__studio">STUDIO:</span>
+                    <div class="desc__studio-btn">MGM / UA</div>
+                </div>
+
+                <span class="desc__cast">CAST:</span>
+                <samp class="desc__cast-text"
+                    >Robert De Niro, Stellan Skarsgard, Natascha McElhone, Jean
+                    Reno, Jonathan Pryce, Sean Bean
+                </samp>
+                <div class="desc__wrap-dow">
+                    <button class="desc__btn-dow">
+                        <span class="desc__btn-txt">Download</span>
+                    </button>
+                    <button class="desc__how-dow">HOW DOWNLOAD?</button>
+                    <button class="desc__dmca">DMCA INFO</button>
+                </div>
             </div>
 
             <!-- parts-dow -->
 
-            <section class="parts">
+            <section class="parts" hidden>
                 <button class="parts__close">
                     <img src="../../img/cross-y.svg" alt="" />
                 </button>
@@ -84,3 +94,11 @@
         </div>
     </div>
 </div>
+
+<!-- The Best Movies Week -->
+<section class="best">
+    <h2 class="bestsellers__title">The Best Movies Week</h2>
+    <h1 class="bestsellers__subtitle">More films from MGM / UA</h1>
+    @@include('../rec/rec.html')
+</section>
+<!-- /The Best Movies Week -->
