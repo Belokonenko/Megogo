@@ -8,9 +8,9 @@
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
     color: #fff;
-    transition: all .3s;
+    transition: all 0.3s;
     &:hover {
         color: $color-beta;
     }
@@ -19,7 +19,6 @@ a {
 ul {
     list-style: none;
 }
-
 
 .page-body {
     font-family: "Montserrat", sans-serif;
@@ -32,7 +31,7 @@ ul {
 .container {
     margin: 0 auto;
     padding: 0 82px;
-    width: 100%; 
+    width: 100%;
     max-width: 1920px;
 }
 
