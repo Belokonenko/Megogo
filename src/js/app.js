@@ -4,6 +4,7 @@ import rec from "../parts/rec/rec.js";
 import newest from "../parts/newest/newest.js";
 import search from "../parts/search/search.js";
 import data from "../parts/data/data.js";
+import description from "../parts/description/description.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     baner();
@@ -11,4 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
     newest();
     search();
     data();
+    description();
 })
