@@ -7,8 +7,7 @@
     border-radius: 12px;
     color: $color-light;
     text-align: center;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 50px;
 }
 .contact__title {
     font-weight: 700;
@@ -43,6 +42,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 .contact__inp-name,
 .contact__inp-email,
@@ -92,10 +94,6 @@ input:-webkit-autofill:active  {
 }
 input:-webkit-autofill {
     -webkit-text-fill-color: $color-light !important;
-}
-:active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
 }
 //  test 
 .contact__group-name  {
@@ -157,6 +155,7 @@ input:-webkit-autofill {
     border: 1px solid $color-bg-gamma;
     border-radius: 19px;
     margin: 0 auto;
+    padding: 20px;
 }
 .contact__mail-txt {
     font-weight: 400;
@@ -177,6 +176,10 @@ input:-webkit-autofill {
 @media (max-width: 1024px) {
 }
 @media (max-width: 992px) {
+    .contact {
+
+    padding: 90px 20px;
+    } 
     .contact__block-mail {
         flex-direction: column;
         row-gap: 10px;
@@ -188,6 +191,10 @@ input:-webkit-autofill {
 @media (max-width: 768px) {
 }
 @media (max-width: 425px) {
+    .contact {
+
+    padding: 90px 5px;
+    } 
 }
 @media (max-width: 375px) {
 }
