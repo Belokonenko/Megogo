@@ -1,7 +1,7 @@
 export default function newest() {
     const dataContent = [
         {
-            href: "../patern.html",
+            href: "../movie.html",
             img: "./img/img-film-0.jpg",
             resolution: 1080,
             rating: 5.0,
@@ -21,7 +21,7 @@ export default function newest() {
             desc: "3-Movie",
         },
         {
-            href: "#",
+            href: "../movie.html",
             img: "./img/img-film-2.jpg",
             resolution: 1080,
             rating: 3.5,
@@ -31,7 +31,7 @@ export default function newest() {
             desc: "1-Movie",
         },
         {
-            href: "#",
+            href: "../movie.html",
             img: "./img/img-film-3.jpg",
             resolution: 1080,
             rating: 4.0,
@@ -41,7 +41,7 @@ export default function newest() {
             desc: "1-Movie",
         },
         {
-            href: "#",
+            href: "../movie.html",
             img: "./img/img-film-4.jpg",
             resolution: 1080,
             rating: 3.3,
@@ -51,7 +51,7 @@ export default function newest() {
             desc: "1-Movie Collection ",
         },
         {
-            href: "#",
+            href: "../movie.html",
             img: "./img/img-film-5.jpg",
             resolution: 1080,
             rating: 5.3,

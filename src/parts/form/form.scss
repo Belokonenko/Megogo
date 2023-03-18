@@ -87,46 +87,45 @@
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px $color-bg-gamma inset !important;
 }
 input:-webkit-autofill {
     -webkit-text-fill-color: $color-light !important;
 }
-//  test 
-.contact__group-name  {
+//  test
+.contact__group-name {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
     max-width: 700px;
     width: 100%;
     &::before {
-        content: url('../img/name.svg');
+        content: url("../img/name.svg");
         position: absolute;
         top: 50%;
         left: 20px;
         transform: translateY(-45%);
-
     }
 }
 
-.contact__group-email{
+.contact__group-email {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
     max-width: 700px;
     width: 100%;
     &::before {
-        content: url('../img/mail.svg');
+        content: url("../img/mail.svg");
         position: absolute;
         top: 50%;
         left: 20px;
         transform: translateY(-40%);
     }
 }
-// /test 
+// /test
 
 .contact__btn-sent {
     width: 366px;
@@ -171,15 +170,93 @@ input:-webkit-autofill {
     color: $color-beta;
 }
 
+// -- modal
+/* Стили для подложки */
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $color-light;
+
+}
+
+/* Стили для контейнера модального окна */
+.modal__container {
+    min-width: 700px;
+    background-color: #111111;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стили для заголовка модального окна */
+.modal__title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+/* Стили для текста модального окна */
+.modal__text {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal__btn-close {
+
+
+    width: 366px;
+    height: 81px;
+
+    background: #e4d804;
+    box-shadow: 0px 11px 25px rgba(228, 216, 4, 0.17);
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    color: color-bg-alpha;
+    margin-bottom: 70px;
+    margin: 1em;
+}
+
+/* Стили для кнопки закрытия модального окна */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+
 @media (max-width: 1440px) {
 }
 @media (max-width: 1024px) {
 }
 @media (max-width: 992px) {
     .contact {
-
-    padding: 90px 20px;
-    } 
+        padding: 90px 20px;
+    }
     .contact__block-mail {
         flex-direction: column;
         row-gap: 10px;
@@ -192,9 +269,8 @@ input:-webkit-autofill {
 }
 @media (max-width: 425px) {
     .contact {
-
-    padding: 90px 5px;
-    } 
+        padding: 90px 5px;
+    }
 }
 @media (max-width: 375px) {
 }
