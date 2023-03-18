@@ -26,10 +26,62 @@
     padding: 0 20px;
 }
 .nav-link {
+    position: relative;
     display: flex;
     align-items: center;
     height: 100%;
+    &:hover {
+        color: $color-beta;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-beta;
+        left: 0;
+        bottom: 0;
+        transform: scale(0);
+        transition: all 0.3s;
+        transform-origin: left;
+    }
+    &:hover::before {
+        transform: scale(1);
+    }
 }
+
+
+
+.header__nav-link {
+    color: $color-light;
+    @include linkMax();
+    transition: all 0.3s;
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &:hover {
+        color: $color-beta;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-beta;
+        left: 0;
+        bottom: 0;
+        transform: scale(0);
+        transition: all 0.3s;
+        transform-origin: left;
+    }
+    &:hover::before {
+        transform: scale(1);
+    }
+}
+
+
+
 .header__form-serch {
     display: flex;
     align-items: center;
