@@ -1,4 +1,5 @@
 import { dataContent } from "../bd/bd.js";
+
 export default function rec() {
     //-- size slide in css
     const numVewSlides = 6;
@@ -8,7 +9,8 @@ export default function rec() {
     if (vew) {
 
         //-- create cards
-        creatSlide(dataContent);
+
+        creatSlide(dataContent.slice(0, 20));
 
         const cardds = document.querySelectorAll(".card-wrap");
         const numCardds = cardds.length;
