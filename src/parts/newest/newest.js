@@ -19,7 +19,7 @@ export default function newest() {
             const itemsToShow = data.slice(startIndex, endIndex);
 
             itemsToShow.forEach((item, i) => {
-                dataContainer.innerHTML += '';
+                dataContainer.innerHTML += "";
                 dataContainer.innerHTML += `
                 <a class="card-b" href=${item.href} data-num=${i}>
                     <div class="card-b__wrap-img">
@@ -54,25 +54,64 @@ export default function newest() {
         }
 
         function displayPagination(data, currentPage, itemsPerPage) {
-            const paginationContainer = document.querySelector(".newest__pagination");
+            const paginationContainer = document.querySelector(
+                ".newest__pagination"
+            );
             paginationContainer.innerHTML = "";
 
             const pages = Math.ceil(data.length / itemsPerPage);
+            const maxVewNum = 3;
 
-            for (let i = 1; i <= pages; i++) {
-                const button = document.createElement("button");
-                button.innerHTML = i;
-                button.addEventListener("click", () => {
-                    currentPage = i;
-                    displayData(data, currentPage, itemsPerPage);
-                    displayPagination(data, currentPage, itemsPerPage);
-                });
+            if (currentPage == 1) {
+                for (let i = 1; i <= maxVewNum; i++) {
+                    const button = document.createElement("button");
+                    button.innerHTML = i;
+                    button.addEventListener("click", () => {
+                        currentPage = i;
+                        displayData(data, currentPage, itemsPerPage);
+                        displayPagination(data, currentPage, itemsPerPage);
+                    });
 
-                if (i === currentPage) {
-                    button.disabled = true;
+                    if (i === currentPage) {
+                        button.disabled = true;
+                    }
+
+                    paginationContainer.appendChild(button);
                 }
 
-                paginationContainer.appendChild(button);
+
+            } else if (currentPage == pages) {
+                for (let i = currentPage - 2 ; i <= currentPage; i++) {
+                    const button = document.createElement("button");
+                    button.innerHTML = i;
+                    button.addEventListener("click", () => {
+                        currentPage = i;
+                        displayData(data, currentPage, itemsPerPage);
+                        displayPagination(data, currentPage, itemsPerPage);
+                    });
+
+                    if (i === currentPage) {
+                        button.disabled = true;
+                    }
+
+                    paginationContainer.appendChild(button);
+                }
+            } else {
+                for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+                    const button = document.createElement("button");
+                    button.innerHTML = i;
+                    button.addEventListener("click", () => {
+                        currentPage = i;
+                        displayData(data, currentPage, itemsPerPage);
+                        displayPagination(data, currentPage, itemsPerPage);
+                    });
+
+                    if (i === currentPage) {
+                        button.disabled = true;
+                    }
+
+                    paginationContainer.appendChild(button);
+                }
             }
         }
 
