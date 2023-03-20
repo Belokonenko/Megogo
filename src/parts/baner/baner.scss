@@ -33,7 +33,7 @@
     height: 100px;
 }
 .item {
-    background-color: $color-beta;
+    background-color: transparent;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,11 +65,15 @@
     width: 55px;
     height: 55px;
 }
+
 .btn-prev {
     left: 5%;
 }
 .btn-next {
     right: 5%;
+}
+.svg-arr {
+    margin-top: 5px;
 }
 .svg-arr-next {
     transform: rotate(180deg);
