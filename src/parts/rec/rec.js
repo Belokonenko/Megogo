@@ -1,3 +1,4 @@
+import { dataContent } from "../bd/bd.js";
 export default function rec() {
     //-- size slide in css
     const numVewSlides = 6;
@@ -5,131 +6,9 @@ export default function rec() {
     const vew = document.querySelector(".vew");
 
     if (vew) {
-        const dataRec = [
-        {
-            href: "../movie.html",
-            img: "./img/img-film-0.jpg",
-            resolution: 1080,
-            rating: 5.0,
-            year: 2022,
-            time: 111,
-            name: "Crossword Mysteries",
-            desc: "2-Movie Collection",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-1.jpg",
-            resolution: 1080,
-            rating: 4.5,
-            year: 2020,
-            time: 147,
-            name: "Scream 3",
-            desc: "3-Movie",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-2.jpg",
-            resolution: 1080,
-            rating: 3.5,
-            year: 2021,
-            time: 100,
-            name: "Django Unchained",
-            desc: "1-Movie",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-3.jpg",
-            resolution: 1080,
-            rating: 4.0,
-            year: 2019,
-            time: 190,
-            name: "The Avengers",
-            desc: "1-Movie",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-4.jpg",
-            resolution: 1080,
-            rating: 3.3,
-            year: 2020,
-            time: 120,
-            name: "Warrior",
-            desc: "1-Movie Collection ",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-5.jpg",
-            resolution: 1080,
-            rating: 5.3,
-            year: 2020,
-            time: 122,
-            name: "Mad Max",
-            desc: "Fury Road",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-0.jpg",
-            resolution: 1080,
-            rating: 5.0,
-            year: 2022,
-            time: 111,
-            name: "Crossword Mysteries",
-            desc: "2-Movie Collection",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-1.jpg",
-            resolution: 1080,
-            rating: 4.5,
-            year: 2020,
-            time: 147,
-            name: "Scream 3",
-            desc: "3-Movie",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-2.jpg",
-            resolution: 1080,
-            rating: 3.5,
-            year: 2021,
-            time: 100,
-            name: "Django Unchained",
-            desc: "1-Movie",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-3.jpg",
-            resolution: 1080,
-            rating: 4.0,
-            year: 2019,
-            time: 190,
-            name: "The Avengers",
-            desc: "1-Movie",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-4.jpg",
-            resolution: 1080,
-            rating: 3.3,
-            year: 2020,
-            time: 120,
-            name: "Warrior",
-            desc: "1-Movie Collection ",
-        },
-        {
-            href: "../movie.html",
-            img: "./img/img-film-5.jpg",
-            resolution: 1080,
-            rating: 5.3,
-            year: 2020,
-            time: 122,
-            name: "Mad Max",
-            desc: "Fury Road",
-        },
-        ];
 
         //-- create cards
-        creatSlide(dataRec);
+        creatSlide(dataContent);
 
         const cardds = document.querySelectorAll(".card-wrap");
         const numCardds = cardds.length;
