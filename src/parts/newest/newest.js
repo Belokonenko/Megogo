@@ -16,18 +16,20 @@ export default function newest() {
         let currentPage = 1;
 
         const pagContainer = document.querySelector(".newest__pagination-num");
+        
+        displayContent();
+        // displayData(dataContent, currentPage, itemsPerPage);
+        // displayPagination();
 
-        displayData(dataContent, currentPage, itemsPerPage);
-        displayPagination();
-
-        // --- listeners
+        // --- listeners btn pagination
 
         btnNext.addEventListener("click", () => {
             ++currentPage;
             
             if (currentPage <= pages) {
-                displayData(dataContent, currentPage, itemsPerPage);
-                displayPagination();
+                displayContent();
+                // displayData(dataContent, currentPage, itemsPerPage);
+                // displayPagination();
             } else {
                 currentPage = pages;
             }
@@ -37,17 +39,23 @@ export default function newest() {
             --currentPage;
             
             if (currentPage > 0) {
-                displayData(dataContent, currentPage, itemsPerPage);
-                displayPagination();
+                displayContent();
+                // displayData(dataContent, currentPage, itemsPerPage);
+                // displayPagination();
             } else {
                 currentPage = 1;
             }
 
         });
         
-        // --- /listeners
+        // --- /listeners btn pagination
 
         // --- functions
+        
+        function displayContent() {
+                displayData(dataContent, currentPage, itemsPerPage);
+                displayPagination();
+        }
 
         function getPagBtn(i) {
             const btn = document.createElement("button");
@@ -83,14 +91,9 @@ export default function newest() {
             pagContainer.innerHTML = "";
 
             if (currentPage == 1) {
-                for (
-                    let index = currentPage;
-                    index < currentPage + maxPag;
-                    index++
-                ) {
-                    addBtnPag(getPagBtn(index));
-                }
-
+                addBtnPag(getPagBtn(currentPage ));
+                addBtnPag(getPagBtn(currentPage + 1));
+                addBtnPag(getPagBtn(currentPage + 2));
                 setDots();
                 addBtnPag(getPagBtn(pages));
             } else if (currentPage == pages) {
