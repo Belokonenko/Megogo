@@ -132,7 +132,7 @@
     width: 50px;
     height: 30px;
 }
-.newest__arr-pag-left {
+.newest__pag-next-btn {
     transform: rotate(180deg);
 }
 .newest__wrap-pag-num {
@@ -140,16 +140,21 @@
 
 }
 .newest__pag-num {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3em 0.5em 0.1em 0.5em;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: $color-light;
+    outline: none;
+    border: none;
+    padding: 5px;
     &--active {
         border: 1px solid rgba(255, 255, 255, 0.1);
         font-size: 21px;
         font-weight: 700;
         color: $color-beta;
     }
+
 }
 // --  /pagination block
 

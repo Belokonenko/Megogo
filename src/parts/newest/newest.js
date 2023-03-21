@@ -4,8 +4,115 @@ export default function newest() {
     const newestContent = document.querySelector(".newest__content");
 
     if (newestContent) {
+        
+        // --- pagination
+
+        const btnPrev = document.querySelector(".pag-btn-prev");
+        const btnNext = document.querySelector(".pag-btn-next");
+
         const itemsPerPage = 20;
+        const pages = Math.ceil(dataContent.length / itemsPerPage);
+        const maxPag = 3;
         let currentPage = 1;
+
+        const pagContainer = document.querySelector(".newest__pagination-num");
+
+        displayData(dataContent, currentPage, itemsPerPage);
+        displayPagination();
+
+        // --- listeners
+
+        btnNext.addEventListener("click", () => {
+            ++currentPage;
+            
+            if (currentPage <= pages) {
+                displayData(dataContent, currentPage, itemsPerPage);
+                displayPagination();
+            } else {
+                currentPage = pages;
+            }
+        });
+
+        btnPrev.addEventListener("click", () => {
+            --currentPage;
+            
+            if (currentPage > 0) {
+                displayData(dataContent, currentPage, itemsPerPage);
+                displayPagination();
+            } else {
+                currentPage = 1;
+            }
+
+        });
+        
+        // --- /listeners
+
+        // --- functions
+
+        function getPagBtn(i) {
+            const btn = document.createElement("button");
+            btn.innerHTML = i;
+            btn.addEventListener("click", () => {
+                console.log(`click ${i}`);
+                currentPage = i;
+                displayData(dataContent, currentPage, itemsPerPage);
+                displayPagination();
+            });
+
+            btn.classList.add("newest__pag-num");
+
+            if (i == currentPage) {
+                btn.classList.add("newest__pag-num--active");
+            }
+
+            return btn;
+        }
+
+        function addBtnPag(btn) {
+            pagContainer.append(btn);
+        }
+
+        function setDots() {
+            const span = document.createElement("span");
+            span.innerHTML = "...";
+            pagContainer.append(span);
+        }
+
+        function displayPagination() {
+            console.log(`displayPagination = ${currentPage}`);
+            pagContainer.innerHTML = "";
+
+            if (currentPage == 1) {
+                for (
+                    let index = currentPage;
+                    index < currentPage + maxPag;
+                    index++
+                ) {
+                    addBtnPag(getPagBtn(index));
+                }
+
+                setDots();
+                addBtnPag(getPagBtn(pages));
+            } else if (currentPage == pages) {
+                addBtnPag(getPagBtn(1));
+                setDots();
+                addBtnPag(getPagBtn(currentPage - 2));
+                addBtnPag(getPagBtn(currentPage - 1));
+                addBtnPag(getPagBtn(currentPage));
+            } else if (currentPage == pages - 1) {
+                addBtnPag(getPagBtn(1));
+                setDots();
+                addBtnPag(getPagBtn(currentPage - 1));
+                addBtnPag(getPagBtn(currentPage));
+                addBtnPag(getPagBtn(currentPage + 1));
+            } else {
+                addBtnPag(getPagBtn(currentPage - 1));
+                addBtnPag(getPagBtn(currentPage));
+                addBtnPag(getPagBtn(currentPage + 1));
+                setDots();
+                addBtnPag(getPagBtn(pages));
+            }
+        }
 
         function displayData(data, currentPage, itemsPerPage) {
             const dataContainer = document.querySelector(".newest__content");
@@ -53,70 +160,7 @@ export default function newest() {
             });
         }
 
-        function displayPagination(data, currentPage, itemsPerPage) {
-            const paginationContainer = document.querySelector(
-                ".newest__pagination"
-            );
-            paginationContainer.innerHTML = "";
-
-            const pages = Math.ceil(data.length / itemsPerPage);
-            const maxVewNum = 3;
-
-            if (currentPage == 1) {
-                for (let i = 1; i <= maxVewNum; i++) {
-                    const button = document.createElement("button");
-                    button.innerHTML = i;
-                    button.addEventListener("click", () => {
-                        currentPage = i;
-                        displayData(data, currentPage, itemsPerPage);
-                        displayPagination(data, currentPage, itemsPerPage);
-                    });
-
-                    if (i === currentPage) {
-                        button.disabled = true;
-                    }
-
-                    paginationContainer.appendChild(button);
-                }
-
-
-            } else if (currentPage == pages) {
-                for (let i = currentPage - 2 ; i <= currentPage; i++) {
-                    const button = document.createElement("button");
-                    button.innerHTML = i;
-                    button.addEventListener("click", () => {
-                        currentPage = i;
-                        displayData(data, currentPage, itemsPerPage);
-                        displayPagination(data, currentPage, itemsPerPage);
-                    });
-
-                    if (i === currentPage) {
-                        button.disabled = true;
-                    }
-
-                    paginationContainer.appendChild(button);
-                }
-            } else {
-                for (let i = currentPage - 1; i <= currentPage + 1; i++) {
-                    const button = document.createElement("button");
-                    button.innerHTML = i;
-                    button.addEventListener("click", () => {
-                        currentPage = i;
-                        displayData(data, currentPage, itemsPerPage);
-                        displayPagination(data, currentPage, itemsPerPage);
-                    });
-
-                    if (i === currentPage) {
-                        button.disabled = true;
-                    }
-
-                    paginationContainer.appendChild(button);
-                }
-            }
-        }
-
-        displayData(dataContent, currentPage, itemsPerPage);
-        displayPagination(dataContent, currentPage, itemsPerPage);
+        // --- pagination
     }
 }
 
