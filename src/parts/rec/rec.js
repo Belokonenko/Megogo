@@ -2,14 +2,16 @@ import { dataContent } from "../bd/bd.js";
 
 export default function rec() {
     //-- size slide in css
-    const numVewSlides = 6;
+
+    let numVewSlides = 6;
+    const wrap = document.querySelector(".rec-wrap");
     const line = document.querySelector(".line");
     const vew = document.querySelector(".vew");
 
     if (vew) {
-
         //-- create cards
 
+        //set count slide of db
         creatSlide(dataContent.slice(0, 20));
 
         const cardds = document.querySelectorAll(".card-wrap");
@@ -26,6 +28,33 @@ export default function rec() {
         const maxPositionMark = numCardds - numVewSlides;
         let positionMarker = 0;
 
+        // --- listeners
+
+        //listener resize
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                let wrapWidth = wrap.getBoundingClientRect().width;
+                console.log(wrapWidth);
+
+                if (wrapWidth < 600) {
+                    numVewSlides = 1
+                } else if (wrapWidth < 900) {
+                    numVewSlides = 2
+                } else if (wrapWidth < 1200) {
+                    numVewSlides = 3
+                } else if (wrapWidth < 1500) {
+                    numVewSlides = 4
+                } else if (wrapWidth < 1800) {
+                    numVewSlides = 5
+                } else if (wrapWidth > 1800) {
+                    numVewSlides = 6
+                }
+                vew.style.width = `${widthSlide * numVewSlides}px`;
+            }, 100);
+        });
+
         next.addEventListener("click", () => {
             if (positionMarker == maxPositionMark) {
                 positionMarker = 0;
@@ -36,6 +65,7 @@ export default function rec() {
                     positionMarker = maxPositionMark;
                 }
             }
+            console.log(positionMarker);
             muveLine(positionMarker);
         });
 
@@ -49,10 +79,14 @@ export default function rec() {
                     positionMarker = 0;
                 }
             }
+            console.log(positionMarker);
             muveLine(positionMarker);
         });
 
-        //set position line
+        // --- /listeners
+
+        //set position line center
+
         muveLine(Math.round(maxPositionMark / 2));
 
         //-- functions --
