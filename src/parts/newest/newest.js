@@ -207,8 +207,8 @@ export default function newest() {
 
             // sort by name
             temp.sort((a, b) => {
-                const nameA = a.desc.toUpperCase(); // ignore upper and lowercase
-                const nameB = b.desc.toUpperCase(); // ignore upper and lowercase
+                const nameA = a.name.toUpperCase(); // ignore upper and lowercase
+                const nameB = b.name.toUpperCase(); // ignore upper and lowercase
 
                 if (nameA < nameB) {
                     return -1;
