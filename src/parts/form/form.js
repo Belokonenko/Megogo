@@ -75,7 +75,6 @@ export default function form() {
 
             document.body.appendChild(modal);
 
-            document.body.style.overflow = "hidden";
 
             const time = setTimeout(function () {
                 modal.remove();

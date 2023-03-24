@@ -1,5 +1,6 @@
 .baner {
     background-color: $color-bg-alpha;
+    height: 884px;
 }
 
 .slider {
@@ -23,14 +24,13 @@
     position: relative;
     display: flex;
     list-style: none;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .slider__item {
-    min-height: 884px;
+    max-height: 884px;
     height: 100%;
     flex: 0 1 auto;
     overflow: hidden;
-    height: 100px;
 }
 .item {
     background-color: transparent;
@@ -85,11 +85,11 @@
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     height: 15px;
     padding: 1rem;
     // background-color: red;
@@ -100,7 +100,7 @@
     width: 10px;
     background-color: $color-light;
     border-radius: 50%;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &--active {
         height: 15px;
@@ -108,8 +108,40 @@
         background-color: $color-beta;
     }
     &:not(:last-child) {
-      margin-right: 10px;  
+        margin-right: 10px;
     }
 }
 
 // /dots
+
+@media (max-width: 1800px) {
+    .baner {
+        height: 700px;
+    }
+}
+@media (max-width: 1440px) {
+    .baner {
+        height: 500px;
+    }
+}
+@media (max-width: 1024px) {
+    .baner {
+        height: 400px;
+    }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+    .baner {
+        height: 300px;
+    }
+}
+@media (max-width: 425px) {
+    .baner {
+        height: 200px;
+    }
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+}
