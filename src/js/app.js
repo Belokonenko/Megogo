@@ -7,6 +7,8 @@ import data from "../parts/data/data.js";
 import description from "../parts/description/description.js";
 import form from "../parts/form/form.js";
 import burger from "../parts/burger/burger.js";
+import stars from "../parts/stars/stars.js";
+
 document.addEventListener('DOMContentLoaded', () => {
     baner();
     rec()
@@ -16,4 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     description();
     form();
     burger();
+    stars()
+
 })
