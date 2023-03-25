@@ -1,8 +1,9 @@
 .search {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr max-content;
 
-    max-height: 76px;
+    max-height:60px;
     max-width: 400px;
     width: 100%;
     outline: none;
@@ -13,13 +14,15 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    margin-right: 50px;
+    margin-right: 70px;
     align-self: center;
 
     color: transparent;
     background-color: transparent;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0);
+
+    transition: all .3s;
 
     &:hover {
         border: 1px solid rgba(255, 255, 255, 0.25);
@@ -45,14 +48,27 @@
     line-height: 24px;
     padding-left: 20px;
     opacity: 0;
+    transition: all .3s;
 
 }
 
 .search__btn {
-    width: 76px;
-    height: 76px;
+    width: 60px;
+    height: 60px;
     outline: none;
     border: none;
     background-color: transparent;
     background: transparent;
 }
+// list result searc
+.search__res-list {
+    position: absolute;
+    top: 102%;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    background: #161616;
+    padding: 0 20px;
+    z-index: 100;
+}
+// /list result searc
