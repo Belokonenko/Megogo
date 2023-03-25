@@ -1,71 +1,42 @@
+import { dataContent } from "../bd/bd.js";
+
 export default function stars() {
-    const ratings = document.querySelectorAll(".rating");
+    const ratings = document.querySelector(".rating");
+    const ratingValue = document.querySelector(".rating__value");
+    const ratingActive = document.querySelector(".rating__active");
+    const ratingItems = document.querySelectorAll(".rating__item");
 
     if (ratings) {
-        if (ratings.length > 0) {
-            initRatings();
+        setRatingVal(dataContent[0].rating);
+
+        ratingItems.forEach((element) => {
+            element.addEventListener("mouseenter", () => {
+                setStars(element.value);
+            });
+            element.addEventListener("mouseleave", () => {
+                setStars();
+            });
+            element.addEventListener("click", () => {
+                // console.log(ratingValue.innerHTML);
+                // console.log(element.value);
+                // console.log( Math.abs((ratingValue.innerHTML - element.value) /2));
+                console.log(dataContent[0].vote);
+                setRatingVal(element.value);
+            });
+        });
+
+        function setRatingVal(num) {
+            if (num - Math.floor(num) == 0) {
+                num = `${num}.0`;
+            }
+
+            ratingValue.innerHTML = num;
+            setStars();
         }
-        //  functions
 
-        function initRatings() {
-            let ratingActive, ratingValue;
-
-            for (let index = 0; index < ratings.length; index++) {
-                const rating = ratings[index];
-                initRating(rating);
-            }
-
-            function initRating(rating) {
-                initRatingVars(rating);
-
-                setRatingActivaWidth();
-
-                if (rating.classList.contains("rating_set")) {
-                    setRating(rating);
-                }
-            }
-
-            function initRatingVars(rating) {
-                ratingActive = rating.querySelector(".rating__active");
-                ratingValue = rating.querySelector(".rating__value");
-            }
-
-            function setRatingActivaWidth(index = ratingValue.innerHTML) {
-                const ratingActiveWidth = index / 0.05;
-                ratingActive.style.width = `${ratingActiveWidth}%`;
-            }
-
-            function setRating(rating) {
-                const ratingItems = rating.querySelectorAll(".rating__item");
-
-                for (let index = 0; index < ratingItems.length; index++) {
-                    console.log(ratingItems[index].value);
-
-                    const ratingItem = ratingItems[index];
-
-                    ratingItem.addEventListener("mouseenter", (e) => {
-                        console.log(e.target.value);
-                        initRatingVars(rating);
-
-                        setRatingActivaWidth(ratingItem.value);
-                    });
-                    ratingItem.addEventListener("mouseleave", (e) => {
-                        setRatingActivaWidth();
-                    });
-                    ratingItem.addEventListener("click", () => {
-                        // update vars
-                        initRatingVars(rating);
-
-                        if (rating.dataset.ajax) {
-                            // send on server
-                            setRatingValue(ratingItem.value, rating);
-                        } else {
-                            ratingValue.innerHTML = index + 1;
-                            setRatingActivaWidth();
-                        }
-                    });
-                }
-            }
+        function setStars(index = ratingValue.innerHTML) {
+            ratingActive.style.width = `${index / 0.05}%`;
         }
+
     }
 }

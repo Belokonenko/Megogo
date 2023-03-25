@@ -3,11 +3,12 @@ export const dataContent = [
         href: "./movie.html",
         img: "./img/img-film-0.jpg",
         resolution: 1080,
-        rating: 5.0,
+        rating: 4.0,
         year: 2022,
         time: 111,
         name: "Crossword Mysteries",
         desc: "2-Movie Collection",
+        vote: 0,
     },
     {
         href: "./movie.html",
