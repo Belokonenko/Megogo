@@ -34,8 +34,12 @@
 }
 
 @media (max-width: 1440px) {
+  
+    .soc {
+        justify-self: end;
+    }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1024px) {
     .soc {
         margin: 2rem auto;
         grid-column: 1/-1;
@@ -47,8 +51,6 @@
     .soc-img {
         width: 50px;
     }
-}
-@media (max-width: 1024px) {
 }
 @media (max-width: 992px) {
 }

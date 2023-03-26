@@ -12,13 +12,14 @@
 }
 @media (max-width: 992px) {
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header__btn-burger {
         display: block;
         position: relative;
         overflow: hidden;
         order: 0;
         transition: all 0.9s;
+        justify-self: start;
         span {
             display: block;
             position: absolute;
