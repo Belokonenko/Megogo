@@ -10,7 +10,6 @@ export default function search() {
         if (value) {
             dataContent.forEach((item) => {
                 if ((item.name.toLowerCase().search(value.toLowerCase())) > -1) {
-                    console.log(value);
                     listResult.innerHTML += `
                         <li class="search__res-item"><a href="./movie.html">${item.name}</a></li>
 

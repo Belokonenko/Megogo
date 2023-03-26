@@ -6,7 +6,6 @@ export default function description() {
     if (btnDow) {
         btnDow.addEventListener("click", () => {
             blockDow.classList.add("viseble");
-            console.log('btnDow');
         });
 
         close.addEventListener("click", () => {

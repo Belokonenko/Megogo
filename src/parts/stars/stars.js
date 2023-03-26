@@ -17,10 +17,6 @@ export default function stars() {
                 setStars();
             });
             element.addEventListener("click", () => {
-                // console.log(ratingValue.innerHTML);
-                // console.log(element.value);
-                // console.log( Math.abs((ratingValue.innerHTML - element.value) /2));
-                console.log(dataContent[0].vote);
                 setRatingVal(element.value);
             });
         });

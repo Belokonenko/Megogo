@@ -1,5 +1,5 @@
 export default function form() {
-    const form = document.querySelector(".contact__form"); // получаем форму
+    const form = document.querySelector(".contact__form"); 
     if (form) {
         const sendBtn = document.querySelector(".contact__btn-sent"); // получаем кнопку отправки
 
@@ -55,7 +55,6 @@ export default function form() {
 
         // функция для вывода сообщения в модальном окне
         function showModal(title, message, isSuccess) {
-            console.log("showModal");
 
             sendBtn.blur();
             const modal = document.createElement("div");

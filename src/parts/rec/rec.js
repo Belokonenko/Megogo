@@ -36,7 +36,6 @@ export default function rec() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
                 let wrapWidth = wrap.getBoundingClientRect().width;
-                console.log(wrapWidth);
 
                 if (wrapWidth < 600) {
                     numVewSlides = 1
@@ -65,7 +64,6 @@ export default function rec() {
                     positionMarker = maxPositionMark;
                 }
             }
-            console.log(positionMarker);
             muveLine(positionMarker);
         });
 
@@ -79,7 +77,6 @@ export default function rec() {
                     positionMarker = 0;
                 }
             }
-            console.log(positionMarker);
             muveLine(positionMarker);
         });
 

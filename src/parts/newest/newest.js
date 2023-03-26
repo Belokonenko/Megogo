@@ -55,7 +55,6 @@ export default function newest() {
             const btn = document.createElement("button");
             btn.innerHTML = i;
             btn.addEventListener("click", () => {
-                console.log(`click ${i}`);
                 currentPage = i;
                 displayContent(dataSort);
             });
@@ -80,7 +79,6 @@ export default function newest() {
         }
 
         function displayPagination() {
-            console.log(`displayPagination = ${currentPage}`);
             pagContainer.innerHTML = "";
 
             if (currentPage == 1) {
