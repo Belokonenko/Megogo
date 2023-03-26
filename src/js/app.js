@@ -7,15 +7,17 @@ import description from "../parts/description/description.js";
 import form from "../parts/form/form.js";
 import burger from "../parts/burger/burger.js";
 import stars from "../parts/stars/stars.js";
+import searchB from "../parts/search/search-b.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     baner();
     rec()
     newest();
-    search();
     description();
     form();
     burger();
     stars()
+    search();
+    searchB();
 
 })
