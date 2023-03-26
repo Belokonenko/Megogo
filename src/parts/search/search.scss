@@ -95,10 +95,20 @@
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
+    .search {
+        margin: 0;
+    }
+    .search__input {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 @media (max-width: 425px) {
 }
 @media (max-width: 375px) {
+    .search {
+        min-width: 300px ;
+    }
 }
 @media (max-width: 320px) {
 

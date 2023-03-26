@@ -1,31 +1,29 @@
 <header class="header">
     <div class="header__container container">
-        
         @@include('../logo/logo.html')
-        
-        @@include('../burger/burger.html')
-        
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./patern.html" >STUDIOS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./patern.html" >CATEGORIES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./patern.html" >PARTNERS </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contact.html">CONTACT US</a>
-            </li>
-        </ul>
 
-        @@include('../search/search.html')
-        
-        @@include('../soc/soc.html')
-    
+        <nav class="nav">
+            @@include('../burger/burger.html')
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./patern.html">STUDIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./patern.html">CATEGORIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./patern.html">PARTNERS </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+
+        @@include('../search/search.html') @@include('../soc/soc.html')
     </div>
 </header>

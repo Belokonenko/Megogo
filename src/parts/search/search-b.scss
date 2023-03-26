@@ -1,19 +1,15 @@
 .search-b {
     display: grid;
     grid-template-columns: 1fr max-content;
-
     max-height: 76px;
     max-width: 1639px;
     width: 100%;
     outline: none;
     box-sizing: border-box;
-
     border-radius: 9px;
-
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    margin-right: 50px;
     align-self: center;
     border: 1px solid rgba(255, 255, 255, 0.25);
     color: rgba(255, 255, 255, 0.7);
@@ -42,4 +38,29 @@
     border: none;
     background-color: transparent;
     background: transparent;
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+}
+@media (max-width: 375px) {
+    .search-b {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .search-b__input {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 320px) {
 }

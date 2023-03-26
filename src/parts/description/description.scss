@@ -469,6 +469,38 @@ text-align: center;
 @media (max-width: 768px) {
 }
 @media (max-width: 425px) {
+.desc__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: $color-light;
+    margin-bottom: 35px;
+    &::after,
+    &::before{
+        content: '';
+       top: 50%; 
+       transform: translateY(-50%);
+        max-width: 550px;
+        width: 25vw;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        
+    }
+    &::after{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &::before{
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 }
 @media (max-width: 375px) {
 }
