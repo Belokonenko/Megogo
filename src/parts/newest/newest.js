@@ -152,6 +152,14 @@ export default function newest() {
 
             `;
             });
+            const cardB = document.querySelectorAll('.card-b');
+            cardB.forEach(item => {
+                console.log(item);
+                item.addEventListener('click', () => {
+
+                    console.log('click');
+                })
+            })
         }
 
         // --- pagination pagination
