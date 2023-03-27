@@ -122,7 +122,7 @@ export default function newest() {
             itemsToShow.forEach((item, i) => {
                 dataContainer.innerHTML += "";
                 dataContainer.innerHTML += `
-                <a class="card-b" href=${item.href} data-num=${i}>
+                <a class="card-b" target="_blank" href=${item.href} data-num=${i}>
                     <div class="card-b__wrap-img">
                         <img
                             class="card-b__img"
