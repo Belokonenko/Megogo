@@ -93,7 +93,7 @@ export default function rec() {
 
             arr.forEach((element) => {
                 line.innerHTML += `
-            <div class="card-wrap">
+            <a class="card-wrap" href="movie.html" traget=_blank>
                 <div class="card">
                     <img class="card__img" src=${element.img} alt="movie img" />
                     <div class="card__resolution">
@@ -104,7 +104,7 @@ export default function rec() {
                         <p class="card__rating-num">${element.rating}</p> 
                     </div>
                 </div>
-            </div>
+            </a>
         `;
             });
         }
