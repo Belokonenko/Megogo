@@ -5,12 +5,12 @@ export default function searchB() {
     const searchInput = document.querySelector(".search-b__input");
     const listResult = document.querySelector(".search-b__res-list");
 
-    searchB.addEventListener("mouseleave", () => {
-        listResult.innerHTML = "";
-        searchInput.value = "";
-    });
-
     if (searchInput) {
+        searchB.addEventListener("mouseleave", () => {
+            listResult.innerHTML = "";
+            searchInput.value = "";
+        });
+
         searchInput.addEventListener("input", () => {
             const value = searchInput.value.trim();
 
