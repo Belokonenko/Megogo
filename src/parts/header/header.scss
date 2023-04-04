@@ -85,6 +85,11 @@
         transform: scale(1);
     }
 }
+.nav-item-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 // /nav
 
@@ -156,6 +161,7 @@
     .nav-link {
         justify-content: center;
         padding: 20px;
+        margin-bottom: 10px;
     }
 
     .nav-list--active {
