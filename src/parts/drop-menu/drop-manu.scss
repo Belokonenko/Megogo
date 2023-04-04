@@ -1,0 +1,44 @@
+.dropdown {
+    position: relative;
+    padding-left: 10;
+    padding-right: 20;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    &::after {
+        position: absolute;
+        content: url('../img/arr_patern.svg');
+        right: -15px;
+        top: 50%;
+        transform: translateY(-60%) rotate(180deg);
+    }
+    &:hover .menu-btn::after {
+            transform: rotate(45deg);
+    }
+}
+
+.dropdown-content {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    background-color: $color-bg-alpha;
+    min-width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    min-height: 200px;
+}
