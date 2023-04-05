@@ -5,6 +5,7 @@
     height: 70px;
 
     color: #e4d804;
+    transition: all .3s;
 
     &:hover .arr-partner {
         transform: rotate(180deg);
@@ -45,7 +46,9 @@
     border-radius: 12px;
     padding-left: 10px;
     padding-bottom: 20px;
-   transform: scale(0); 
+    transition: all .3s;
+    transform-origin: top left;
+    transform: scale(0); 
 }
 
 .dropdown-content a {
