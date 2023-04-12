@@ -7,7 +7,10 @@ export default function stars() {
     const ratingItems = document.querySelectorAll(".rating__item");
 
     if (ratings) {
-        setRatingVal(dataContent[0].rating);
+        const arrVotes = [];
+        let rating = 0;
+
+        setRatingVal(rating);
 
         ratingItems.forEach((element) => {
             element.addEventListener("mouseenter", () => {
@@ -17,22 +20,25 @@ export default function stars() {
                 setStars();
             });
             element.addEventListener("click", () => {
-                setRatingVal(element.value);
+                arrVotes.push(element.value);
+
+                const sumWithInitial = arrVotes.reduce(
+                    (accumulator, currentValue) => accumulator + parseFloat(currentValue) ,
+                    0
+                );
+
+                setRatingVal((sumWithInitial / arrVotes.length).toFixed(1));
             });
         });
 
         function setRatingVal(num) {
-            if (num - Math.floor(num) == 0) {
-                num = `${num}.0`;
-            }
 
-            ratingValue.innerHTML = num;
+            ratingValue.innerHTML = parseFloat(num).toFixed(1);
             setStars();
         }
 
         function setStars(index = ratingValue.innerHTML) {
             ratingActive.style.width = `${index / 0.05}%`;
         }
-
     }
 }
